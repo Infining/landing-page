@@ -6,30 +6,18 @@ import { ActivatedRoute } from '@angular/router';
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
-console.log('`About` component loaded asynchronously');
-
 @Component({
-  selector: 'about',
+  selector: 'projects',
   styles: [`
   `],
   template: `
-    <h1>About Me</h1>
+    <h1>Projects</h1>
     <div>
-      <p><b>Name:</b> Nathan James Gaul</p>
-
-      <p><b>Occupation:</b> Student</p>
-
-      <p><b>Current Job:</b> Microgrid Researcher</p>
-
-      <p><b>Previous Jobs:</b> Painter, Electrical Engineering Intern</p>
-
-      <p><b>Hobbies:</b> Electronics, Programming, Web Design, Leathercraft, Reading, Photography</p>
-
-      <p><b>Interests:</b> Engineering, Space, Science, Human Psychology, Philosophy, Nature of Reality</p>
+      <p>Nothing here yet...</p>
     </div>
   `
 })
-export class About {
+export class Projects {
   localState;
   constructor(public route: ActivatedRoute) {
 
@@ -43,7 +31,7 @@ export class About {
         this.localState = data.yourData;
       });
 
-    console.log('hello `About` component');
+    console.log('hello `projects` component');
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);
